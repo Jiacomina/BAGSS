@@ -15,8 +15,8 @@ body{
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
-html { 
-  background: url("images/background3.jpg") no-repeat center center fixed; 
+html {
+  background: url("images/background3.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -146,8 +146,8 @@ html {
 .availTable td {
   border: 0.5px solid rgba(0,0,0,0.08);
   border-spacing: 0;
-  margin:0px; 
-  padding:10px; 
+  margin:0px;
+  padding:10px;
   cursor: pointer;
   border-collapse: collapse;
 }
@@ -190,6 +190,12 @@ input {
 }
 .loginstatus{
 	font-size: 14px;
+	color: rgba(0,0,0,0.8);
+	text-align-last: right;
+	margin-right: 20px;
+}
+#logout{
+	margin-left: 10px;
 }
 .content{
 	margin-bottom: 40px;

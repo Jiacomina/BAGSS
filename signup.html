@@ -14,35 +14,45 @@
           <p class = "title"><b>BAGGS : </b>Badminton Automatic Gaming Scheduling System</p>
             <p class = 'center'><b>Sign Up</b></p>
             <center>
-            <input id = 'fn' class = 'fields' type="text" 
-              name="firstname" 
-              placeholder = "First Name">
-            <br>
-            <input id = 'ln' class = 'fields' type="text" 
-              name="lastname" 
-              placeholder = "Last Name">
-            <br>
-            <input id = 'email' class = 'fields' type="text" 
-              name="email" 
-              placeholder = "Email Address">
-            <br>
-            <input id = 'mobileno' class = 'fields' type="text" 
-              name="mobilenumber" 
-              placeholder = "Mobile Number">
-            <br>
-            <input id = 'createpss' class = 'fields' type="password" 
-              name="createpassword" 
-              placeholder = "Create Password">
-            <br>
-            <input id = 'confirmpss' class = 'fields' type="password" 
-              name="confirmpassword" 
-              placeholder = "Confirm Password">
-          <br>
-          <br>
-          <div id = 'signupfail' class = 'errormess transparent'>Please fill in all the fields</div>
-            <br>
-            <button id = 'gohome' class = "center">Cancel</button>
-            <button id = 'submitsignup' class = "center">Submit</button>
+              <div class = 'signupform'>
+                <input id = 'fn' class = 'fields' type="text"
+                  name="firstname"
+                  placeholder = "First Name">
+                <br>
+                <input id = 'ln' class = 'fields' type="text"
+                  name="lastname"
+                  placeholder = "Last Name">
+                <br>
+                <input id = 'email' class = 'fields' type="text"
+                  name="email"
+                  placeholder = "Email Address">
+                <br>
+                <input id = 'mobileno' class = 'fields' type="text"
+                  name="mobilenumber"
+                  placeholder = "Mobile Number">
+                <br>
+                <input id = 'createpss' class = 'fields' type="password"
+                  name="createpassword"
+                  placeholder = "Create Password">
+                <br>
+                <input id = 'confirmpss' class = 'fields' type="password"
+                  name="confirmpassword"
+                  placeholder = "Confirm Password">
+                <br>
+                <br>
+                <div id = 'signupfail' class = 'errormess transparent'>Please fill in all the fields</div>
+                <br>
+                <button class = "gohome center">Cancel</button>
+                <button id = 'submitsignup' class = "center">Submit</button>
+              </div>
+              <div class = 'verifysignup'>
+                <p>You have been successfully signed up to our membership system, please check your email or SMS to verify your account.<br><br>
+                <input id = 'verficationcode' class = 'fields' type="text"
+                  name="verficationcode"
+                  placeholder = "Enter Verification Code">
+                <br><br><button id = 'login' class = "center">Enter</button><button class = "gohome center">Cancel</button></center>
+
+              </div>
             </center>
         </div>
     </div>

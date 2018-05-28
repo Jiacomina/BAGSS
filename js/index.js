@@ -1,13 +1,19 @@
 $(document).ready(function() {
 	$('#detailform').hide();
-	$("#gohome").on("click", function(){
+	$('.verifysignup').hide();
+
+	$(".gohome").on("click", function(){
 		window.location.href = "index.html";
 	});
 
 	$("#signup").on("click", function(){
 		window.location.href = "signup.html";
 	});
+	$("#logout").on("click", function(){
+		window.location.href = "index.html";
+	});
 	$("#submitsignup").on("click", function(){
+		$("#signupfail").addClass("transparent");
 		fn = $('#fn').val();
 		ln = $('#ls').val();
 		mobileno = $('#mobileno').val();
@@ -18,20 +24,27 @@ $(document).ready(function() {
 		if((ln == '' ) || (fn == '')|| (mobileno == '')|| (email == '')|| (confirmpss == '')|| (createpss == '')){
 			$("#signupfail").removeClass("transparent");
 		}
-		else
-			$('.signupbox').html('<p class = "title"><b>BAGGS : </b>Badminton Automatic Gaming Scheduling System</p><br><br><center><p>You have been successfully signed up to our membership system, please check your email or SMS to verify your account.<br><br><button id ="gohome" class = "center">Home</button></center>');
-		$("#gohome").on("click", function(){
-			window.location.href = "index.html";
-	});
+		else{
+			$('.verifysignup').show();
+			$('.signupform').hide();
+		}
+
+
 	});
 	$("#login").on("click", function(){
-		memberID = $('#memberID').val();
-		password = $('#password').val();
+		memberID = $('#memberID').val().toLowerCase();
+		password = $('#password').val().toLowerCase();
 		if((memberID == '' )|| (password == '')){
 			$('#loginfail').removeClass('transparent');
 		}
-		else{
+		else if(memberID == 'admin' && password == 'admin'){
+			window.location.href = "admin.html";
+		}
+		else if(memberID == '1' && password == '1'){
 			window.location.href = "home.html";
+		}
+		else{
+			$('#pwdfail').removeClass('transparent');
 		}
 	});
 	$("#accountdetails").on("click", function(){
@@ -83,7 +96,6 @@ $(document).ready(function() {
 			window.location.href = "availabilities.html";
 		});
 	});
-
 });
 
 
