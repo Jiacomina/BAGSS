@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>BAGSS| Badminton Automatic Game Scheduling System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <script src="js/index.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:600|Open+Sans" rel="stylesheet">
+  </head>
+  <body>
+      <div class='center pageBox'>
+        <div class = 'center header'>BAGSS | Badminton Automatic Game Scheduling System<p class = 'loginstatus'>Logged In: Saina Nehwal</p></div>  
+        <div class = 'toolbar center'>
+          <button class = 'home toolbutton'>
+            <div id = 'homeicon' class = 'toolbaricon'></div>
+            <br>Home</button>
+          <button class = 'toolbutton' id = 'accountdetails'>
+            <div id = 'usericon' class = 'toolbaricon '></div>
+            <br><b>Account Details</b></button>
+          <button class = 'toolbutton' id = 'availabilities'>
+            <div id = 'availabilitiesicon' class = 'toolbaricon '></div>
+           <br>Availability</button>
+          <button class = 'toolbutton' id = 'mygames'>
+            <div id = 'gameicon' class = 'toolbaricon '></div>
+            <br>My Games</button>
+          <button class = 'toolbutton' id = 'schedule'>
+            <div id = 'scheduleicon' class = 'toolbaricon '></div>
+            <br>Schedule</button>
+          <button class = 'noselect toolbutton' id = 'resultsladder'>
+            <div id = 'resultsladdericon' class = 'toolbaricon '></div>
+          <br><b>Results Ladder</b></button>
+        </div>
+            <div id = 'detailbox' class='details'>
+              <div class = 'center name'>Saina Nehwal</div>
+              <table>
+                <tr>
+                  <td class = 'bold'>First Name:</td>
+                  <td id = 'currentfn'>Saina</td>
+                </tr>
+                <tr>
+                  <td class = 'bold'>Last Name:</td>
+                  <td id = 'currentln'>Nehwal</td>
+                </tr>
+                <tr>
+                  <td class = 'bold'>Email:</td>
+                  <td id = 'currentemail'>saina.nehwal@gmail.com</td>
+                </tr>
+                <tr>
+                  <td class = 'bold'>Mobile Number:</td>
+                  <td>+61 434234342</td>
+                </tr>
+                <tr>
+                  <td class = 'bold'>In a team:</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td class = 'bold'>Team Name:</td>
+                  <td>Nehwal & Sindhu</td>
+                </tr>
+              </table>
+              <br>
+              <button id = 'editdetails' class = "center">Edit Details</button>
+            </div>
+            <div id = 'detailform' class='details'>
+              <div class = 'center name'>Saina Nehwal</div>
+              <table>
+                <tr>
+                  <td class = 'bold'>First Name:</td>
+                  <td><input id ='newfirstname' placeholder = 'Saina'></td>
+                </tr>
+                <tr>
+                  <td class = 'bold'>Last Name:</td>
+                  <td><input id ='newlastname' placeholder = 'Nehwal'></td>
+                </tr>
+                <tr>
+                  <td class = 'bold'>Email:</td>
+                  <td><input id ='newemail' placeholder = 'saina.nehwal@gmail.com'></td>
+                </tr>
+                <tr>
+                  <td class = 'bold'>Mobile Number:</td>
+                  <td><input id ='newmobile' placeholder = '+61 434234342'></td>
+                </tr>
+                <tr>
+                  <td class = 'bold'>In a team:</td>
+                  <td><input id ='inteam' placeholder = 'Yes'></td>
+                </tr>
+                <tr>
+                  <td class = 'bold'>Team Name:</td>
+                  <td><input id ='newteamname' placeholder = 'Nehwal & Sindhu'></td>
+                </tr>
+              </table>
+              <br>
+              <button id = 'changedetails' class = "center">Change Details</button>
+            </div>
+      </div>
+      <div class = 'footer'>Last updated 28 May 2018: <a href = 'admin.html'>Contact Administrator</a></div>
+  </body>
+</html>

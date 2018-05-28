@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>BAGSS| Badminton Automatic Game Scheduling System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <script src="js/index.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:600|Open+Sans" rel="stylesheet">
+  </head>
+  <body>
+      <div class='pageBox center'>
+        <div class = 'center header'>BAGSS | Badminton Automatic Game Scheduling System<p class = 'loginstatus'>Logged In: Saina Nehwal</p></div>
+        <div class = 'toolbar center'>
+          <button class = 'home toolbutton'>
+            <div id = 'homeicon' class = 'toolbaricon'></div>
+            <br>Home</button>
+          <button class = 'toolbutton' id = 'accountdetails'>
+            <div id = 'usericon' class = 'toolbaricon '></div>
+            <br>Account Details</button>
+          <button class = 'toolbutton' id = 'availabilities'>
+            <div id = 'availabilitiesicon' class = 'toolbaricon '></div>
+           <br><b>Availability</b></button>
+          <button class = 'toolbutton' id = 'mygames'>
+            <div id = 'gameicon' class = 'toolbaricon '></div>
+            <br>My Games</button>
+          <button class = 'toolbutton' id = 'schedule'>
+            <div id = 'scheduleicon' class = 'toolbaricon '></div>
+            <br>Schedule</button>
+          <button class = 'noselect toolbutton' id = 'resultsladder'>
+            <div id = 'resultsladdericon' class = 'toolbaricon '></div>
+          <br><b>Results Ladder</b></button>
+        </div>
+        <div class = 'heading'>Select your weekly availabilities: </div>
+        <div class = 'content'>
+        <table class='noselect availTable center'>
+          <thead>
+            <tr>
+              <th class = 'times'>Time</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thur</th>
+              <th>Fri</th>
+              <th>Sat</th>
+              <th>Sun</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class = 'times'>&nbsp;7:30am - 9:00am</td>
+              <td class = 'grayed'>&nbsp;</td>
+              <td class = 'grayed'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+            </tr>
+            <tr>
+              <td class = 'times'>&nbsp;9:00am - 10:30am</td>
+              <td class = 'grayed'>&nbsp;</td>
+              <td class = 'grayed'>&nbsp;</td>
+              <td class = 'cellhover'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'selected grayed'>Available by default&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+            </tr>
+            <tr>
+              <td class = 'times'>&nbsp;10:30am - 12:00pm</td>
+              <td class = 'grayed'>&nbsp;</td>
+              <td class = 'grayed'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'selected grayed'>Available by default&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+            </tr>
+            <tr>
+              <td class = 'times'>&nbsp;12:00pm - 1:30pm</td>
+              <td class = 'grayed'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+            </tr>
+            <tr>
+              <td class = 'times'>&nbsp;1:30pm - 3:00pm</td>
+              <td class = 'grayed'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+            </tr>
+            <tr>
+              <td class = 'times'>&nbsp;3:00pm - 4:30pm</td>
+              <td class = 'grayed'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+            </tr>
+            <tr>
+              <td class = 'times'>&nbsp;4:30pm - 6:00pm</td>
+              <td class = 'grayed'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+            </tr>
+            <tr>
+              <td class = 'times'>&nbsp;6:00pm - 7:30pm</td>
+              <td class = 'grayed'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+            </tr>
+            <tr>
+              <td class = 'times'>&nbsp;7:30pm - 9:00pm</td>
+              <td class = 'grayed'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+              <td class = 'timeslot'>&nbsp;</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <button id = 'submitavailabilities' class = "center">Submit Availabilities</button>
+        <button class = "home center">Cancel</button>
+      </div>
+      <br>
+      <div class = 'footer'>Last updated 28 May 2018: <a href = 'admin.html'>Contact Administrator</a></div>
+  </body>
+</html>
