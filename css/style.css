@@ -200,6 +200,10 @@ input {
 .content{
 	margin-bottom: 40px;
 }
+.resultsladder{
+	margin-left: auto;
+  	margin-right: auto;
+}
 .footer{
 	position: absolute;
   	right: 0;
