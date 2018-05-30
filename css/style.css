@@ -154,6 +154,43 @@ html {
 .availTable th{
 	padding: 10px;
 }
+.schedule{
+  table-layout: fixed;
+  width: 80%;
+  min-height: 250px;
+  margin-left: auto;
+  font-size: 13px;
+  margin-right: auto;
+  border: 0.5px solid rgba(0,0,0,0.2);
+  background: rgba(255,255,255,1);
+}
+.schedule td {
+  border: 0.5px solid rgba(0,0,0,0.08);
+  border-spacing: 0;
+  margin:0px;
+  padding:10px;
+  border-collapse: collapse;
+}
+.schedulecell:hover{
+	border: 0.5px solid rgba(0,0,0,0.3);
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 170px;
+    background-color: black;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 100;
+    transform: translateY(-130%);
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
 .name{
 	font-size: 20px;
 	padding-top: 20px;
@@ -162,6 +199,7 @@ html {
 }
 .selected {
   background-color: rgba(83,255,100,0.5);
+  cursor: pointer;
 }
 input {
     line-height: 1.7em; // 2em is (2 * default line height);
@@ -203,6 +241,14 @@ input {
 .resultsladder{
 	margin-left: auto;
   	margin-right: auto;
+  	table-layout: fixed;
+	width: 70%;
+	min-height: 250px;
+	border: 0.5px solid rgba(0,0,0,0.2);
+	background: rgba(255,255,255,1);
+}
+.yourteam{
+	background-color: rgba(83,255,100,0.5);
 }
 .footer{
 	position: absolute;
